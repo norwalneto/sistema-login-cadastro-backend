@@ -12,11 +12,14 @@ Este projeto tem como objetivo criar a versão número 2 do sistema de login e c
 - ✅ Acesso ao sistema após autenticação.
 
 ## 🛠️ Tecnologias Utilizadas:
+- ### Backend
 - **Java 17** ☕
 - **Spring Boot** 🔧
 - **JWT (JSON Web Token)** 🔑
 - **MySQL** (Banco de Dados) 🗄️
 - **Spring Security** 🔒
+- ### Frontend
+- **Angular 18 🅰️**
 
 ## 🔄 Diagrama de Fluxo
 
