@@ -49,13 +49,13 @@ graph TD;
     WORKDIR /app
 
     # Copia o arquivo JAR gerado para dentro do container
-    COPY target/sistema-login-cadastro.jar app.jar
+    COPY target/sistema-login-cadastro-0.0.1-SNAPSHOT.jar app.jar
 
     # Expõe a porta 8080 para comunicação
     EXPOSE 8080
 
     # Comando para executar a aplicação
-    ENTRYPOINT ["java", "-jar", "app.jar"]
+    ENTRYPOINT ["java", "-jar", "/app.jar"]
 ```
 ### 2️⃣ Criar o arquivo docker-compose.yml
 📌 Esse arquivo permite rodar a aplicação junto com o banco de dados PostgreSQL/MySQL dentro de um container.
