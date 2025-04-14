@@ -2,7 +2,7 @@
   "name": "Spring Boot with MySQL",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "app",
-  "workspaceFolder": "sistema-login-cadastro-backend",
+  "workspaceFolder": "/app",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "17"
@@ -13,6 +13,6 @@
     "vscjava.vscode-java-pack",
     "ms-azuretools.vscode-docker"
   ],
-  "postCreateCommand": "mvn clean install -DskipTests",
+  "postCreateCommand": "./mvnw clean install -DskipTests",
   "remoteUser": "vscode"
 }
