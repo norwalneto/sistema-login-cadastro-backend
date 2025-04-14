@@ -2,12 +2,10 @@
   "name": "Spring Boot with MySQL",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "app",
-  "workspaceFolder": "/sistema-login-cadastro-backend",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "17"
-    },
-    "ghcr.io/devcontainers/features/maven:1": {}
+    }
   },
   "extensions": [
     "vscjava.vscode-java-pack",
