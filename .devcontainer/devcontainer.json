@@ -1,0 +1,19 @@
+{
+    "name": "Spring Boot DevContainer",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/app",
+    "settings": {},
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "./mvnw clean install -DskipTests || true",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17"
+        }
+    }
+}
