@@ -12,6 +12,5 @@
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
-  "postCreateCommand": "mvn clean install",
-  "remoteUser": "vscode"
+  "postCreateCommand": "echo 'Container criado com sucesso!'"
 }
