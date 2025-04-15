@@ -1,16 +1,17 @@
 {
-  "name": "Spring Boot with MySQL",
-  "dockerComposeFile": ["../docker-compose.yml"],
+  "name": "Java Spring Boot Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "17"
-    }
-  },
+  "workspaceFolder": "/app",
   "extensions": [
     "vscjava.vscode-java-pack",
-    "ms-azuretools.vscode-docker"
+    "pivotal.vscode-spring-boot",
+    "redhat.vscode-xml",
+    "vscjava.vscode-maven"
   ],
-  "postCreateCommand": "./mvnw clean install -DskipTests",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "mvn clean install",
   "remoteUser": "vscode"
 }
