@@ -1,6 +1,9 @@
 {
   "name": "Java Dev Env - JDK 17 & 21",
-  "dockerfile": "Dockerfile",
+  "dockerComposeFile": "../docker-compose.yml",
+  "build":{
+    "dockerfile": "Dockerfile"
+  },
   "service": "app",
   "workspaceFolder": "/app",
   "settings": {
