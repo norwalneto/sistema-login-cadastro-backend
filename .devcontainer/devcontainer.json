@@ -1,9 +1,6 @@
 {
   "name": "Java Dev Env - JDK 17 & 21",
   "dockerComposeFile": "../docker-compose.yml",
-  "build":{
-    "dockerfile": "Dockerfile"
-  },
   "service": "app",
   "workspaceFolder": "/app",
   "settings": {
@@ -27,7 +24,7 @@
     "eamodio.gitlens",
     "ms-azuretools.vscode-docker",
     "mhutchie.git-graph",
-    "batisteo.vscode-django",              
+    "batisteo.vscode-django",
     "formulahendry.code-runner",
     "VisualStudioExptTeam.intellicode-api-usage-examples",
     "VisualStudioExptTeam.vscodeintellicode",
